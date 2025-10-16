@@ -22,7 +22,7 @@
       --max-width:1100px;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;}
+    html,body{height:100%; width:100%}
     body{
       margin:0;
       font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
@@ -58,6 +58,7 @@
     .name{font-weight:700;font-size:18px}
     .role{color:var(--muted);font-size:13px}
     .tag{display:inline-block;background:var(--glass);padding:8px 10px;border-radius:10px;margin-top:12px;color:var(--muted);font-weight:600}
+    .lien{width:20px;height:20px;}
 
     .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}
     .skill{background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;font-weight:600;color:var(--muted);font-size:13px}
@@ -141,9 +142,9 @@
         <div class="section">
           <div class="section-title">Contact</div>
           <div class="contact-list">
-            <a href="mailto:teheotime.perrin@gmail.com" title="Envoyer un email">✉️ teheotime.perrin@gmail.com</a>
-            <a href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">🐙 GitHub</a>
-            <a href="https://www.linkedin.com/in/th%C3%A9otime-perrin-725b20325/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+            <a href="mailto:theotime.perrin@gmail.com" title="Envoyer un email"> <img class='lien' src="./images/maillogo.png" /> theotime.perrin@gmail.com</a>
+            <a href="https://github.com/TheotimePerrin" target="_blank" rel="noopener"> <img class='lien' src="./images/githublogo.png"width="200%" height="200%"/>GitHub</a>
+            <a href="https://www.linkedin.com/in/th%C3%A9otime-perrin-725b20325/" target="_blank" rel="noopener"><img class='lien' src="./images/linkedinlogo.png"/> LinkedIn</a>
           </div>
         </div>
 
@@ -209,7 +210,7 @@
             <textarea id="message" placeholder="Ton message" required></textarea>
             <div style="display:flex;gap:8px;align-items:center">
               <button class="btn" type="submit">Envoyer (mailto)</button>
-              <div style="color:var(--muted);font-size:13px">Ou contacte-moi directement : <strong>teheotime.perrin@gmail.com</strong></div>
+              <div style="color:var(--muted);font-size:13px">Ou contacte-moi directement : <strong>theotime.perrin@gmail.com</strong></div>
             </div>
           </form>
           <div class="footer-note">Pour l'oral du BTS, prépare une fiche projet détaillée (contexte, objectifs, architecture, diagrammes, tests, difficultés et solution).</div>

@@ -108,20 +108,24 @@
 }
 
 .carousel-viewport {
+  width: 100%;
+  height: 360px;          /* 🔥 hauteur fixe */
   overflow: hidden;
   border-radius: 12px;
+  background: #191919ff;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
+  height: 100%;
 }
 
-.carousel img {
+.carousel-track img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;    /* 👈 essentiel */
   flex-shrink: 0;
+  display: block;
 }
 
 .carousel-btn {
@@ -217,7 +221,7 @@
               <div class="meta">2024 · HTML · CSS / PhP · MySQL</div>
               <p>Clone d'une interface de streaming : catalogue dynamique et lecture de la bande-annonce, barre de recherche, carrousel de sélection de films, interface de connexion.</p>
               <div class="actions">
-                <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
+                <a class="btn" href="https://github.com/TheotimePerrin/NetflixPhP" target="_blank" rel="noopener">Voir le code</a>
                 <a class="btn secondary" href="#netflix">Démo</a>
               </div>
             </article>
@@ -269,8 +273,7 @@
               <div class="meta">2025 · Bash</div>
               <p>Création et modification de différents automates, envoi de mail automatique, lancement de vidages automatiques.</p>
               <div class="actions">
-                <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">En savoir plus</a>
-                <!-- <a class="btn secondary" href="#">Démo</a> -->
+                <a class="btn" href="#maladie">En savoir plus</a>
               </div>
             </article>
 
@@ -281,8 +284,7 @@
               <div class="meta">2025 · C#</div>
               <p>Formation en C#, Création d'une application, utilisation de frameworks avec synchronisation.</p>
               <div class="actions">
-                <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">En savoir plus</a>
-                <!--<a class="btn secondary" href="#">Démo</a> -->
+                <a class="btn" href="#seebauto">En savoir plus</a>
               </div>
             </article>
           </div>
@@ -346,10 +348,11 @@
         <div class="card" style="margin-top:18px" id="netflix">
           <div class="section-title"><h1>Projets de stages</h1></div>
 
-          <div class="carousel">
+          <div class="carousel" id="maladie">
             <h3>C.T.I - (Centre de Traitement Informatique)</h3>
             <div class="carousel-viewport">
               <div class="carousel-track">
+                <img src="./images/maladie.png" width="auto" height="100%"/>
                 <img src="./images/intranet.png" alt="Projet 1">
                 <img src="./images/exemples.png" alt="Projet 2">
                 <img src="./images/mRemote.png" alt="Projet 3">
@@ -361,10 +364,11 @@
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
           </div>
-          <div class="carousel">
+          <div class="carousel" id="seebauto">
             <h3>Seeb Automation</h3>
             <div class="carousel-viewport">
               <div class="carousel-track">
+                <img src="./images/seebauto.png" width="auto" height="100%"/>
                 <img src="./images/curseurs.png" alt="Projet 3">
                 <img src="./images/ajout_courbes.png" alt="Projet 3">
                 <img src="./images/apli.png" alt="Projet 2">

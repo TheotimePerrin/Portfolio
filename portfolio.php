@@ -81,7 +81,7 @@
 
     .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
     .project{border-radius:12px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 6px 20px rgba(2,6,23,0.45);display:flex;flex-direction:column;gap:10px}
-    .project .thumb{height:120px;border-radius:8px;background:linear-gradient(90deg, #111827, #0f1724);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:var(--muted)}
+    .project .thumb{height:120px;border-radius:8px;background:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:var(--muted)}
     .project h3{margin:0}
     .project .meta{font-size:13px;color:var(--muted)}
     .project .actions{margin-top:auto;display:flex;gap:8px}
@@ -119,7 +119,7 @@
 
 .carousel img {
   width: 100%;
-  height: 260px;
+  height: auto;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -175,9 +175,9 @@
           <div class="section">
             <div class="section-title">Compétences</div>
             <div class="skills">
-              <div class="skill">HTML</div>
-              <div class="skill">CSS</div>
+              <div class="skill">HTML / CSS</div>
               <div class="skill">JavaScript</div>
+              <div class="skill">Python</div>
               <div class="skill">PHP / MySQL</div>
               <div class="skill">Git</div>
               <div class="skill">C#</div>
@@ -193,9 +193,9 @@
             </div>
           </div>
 
-          <div style="margin-top:14px;color:var(--muted);font-size:13px">
+          <!-- <div style="margin-top:14px;color:var(--muted);font-size:13px">
             <strong>Veille :</strong> L'evolution des robots en ligne notament avec l'utilisation de l'ia.
-          </div>
+          </div> -->
         </aside>
       </section>
 
@@ -207,55 +207,59 @@
         </div>
 
         <div class="card" id="projects">
-          <div class="section-title">Projets</div>
+          <div class="section-title"><h1>Projets</h1></div>
           <div class="projects-grid">
 
             <!-- Project 1 -->
             <article class="project">
-              <div class="thumb">Netflix Clone</div>
+              <div class="thumb"><img src="./images/netflix.png" width="auto" height="100%"/></div>
               <h3>Netflix (Clone)</h3>
-              <div class="meta">2024 · HTML · CSS</div>
+              <div class="meta">2024 · HTML · CSS / PhP · MySQL</div>
               <p>Clone d'une interface de streaming : catalogue dynamique et lecture de la bande-annonce, barre de recherche, carrousel de sélection de films, interface de connexion.</p>
               <div class="actions">
                 <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
-                <!-- <a class="btn secondary" href="#">Démo</a> -->
+                <a class="btn secondary" href="#netflix">Démo</a>
               </div>
             </article>
 
             <!-- Project 2 -->
             <article class="project">
-              <div class="thumb">Monopoly</div>
+              <div class="thumb"><img src="./images/monop.jpg" width="auto" height="100%"/></div>
               <h3>Monopoly (Jeu)</h3>
               <div class="meta">2025 · Python</div>
               <p>Adaptation digitale d'un jeu de plateau : gestion du plateau, tours de jeu et logique d'achats/ventes.</p>
               <div class="actions">
                 <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
-                <!--<a class="btn secondary" href="#">Démo</a> -->
+                <a class="btn secondary" href="#Monopoly">Démo</a>
               </div>
             </article>
 
             <!-- Example placeholder for future projects -->
             <article class="project">
-              <div class="thumb">WoodyCraft</div>
-              <h3>Site de Ecomerce</h3>
-              <div class="meta">2025 · Python</div>
+              <div class="thumb"><img src="./images/puzzle.png" width="auto" height="100%"/></div>
+              <h3>Site d'Ecomerce</h3>
+              <div class="meta">2025 · PhP MySQL</div>
               <p>Création d'un site de e-commerce pour la vente de puzzles, gestion des comptes administrateurs, utilisation de la méthode CRUD </p>
               <div class="actions">
               <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
+              <a class="btn secondary" href="#Ecomerce">Démo</a>
               </div>
             </article>
 
           </div>
         </div>
 
-        <div class="card" id="projects">
+        <div class="card" id="projects" style="margin-top:14px;">
           <div>
-            <h3>Veille techno</h3>
+            <h1>Veille techno</h1>
+            <div style="margin:14px;">
+              L'evolution des robots en ligne notament avec l'utilisation de l'ia.
+            </div>
           </div>
         </div>
 
-        <div class="card" id="projects">
-          <div class="section-title">Stages</div>
+        <div class="card" id="projects" style="margin-top:14px;">
+          <div class="section-title"><h1>Stages</h1></div>
           <div class="projects-grid">
 
             <!-- Project 1 -->
@@ -284,15 +288,53 @@
           </div>
         </div>
 
-        <div class="card" style="margin-top:18px">
-          <div class="section-title">Galerie</div>
+        <div class="card" style="margin-top:18px" id="netflix">
+          <div class="section-title"><h1>Projet en classe</h1></div>
 
+          
           <div class="carousel">
+            <h3>Netflix (Clone)</h3>
             <div class="carousel-viewport">
               <div class="carousel-track">
-                <img src="./images/Capture1.png" alt="Projet 1">
-                <img src="./images/Capture2.png" alt="Projet 2">
+                <img src="./images/netflixV1.png" alt="Projet 1">
+                <img src="./images/netflixV2.png" alt="Projet 2">
+                <img src="./images/netflixConnection.png" alt="Projet 3">
+                <img src="./images/netflixV2ajout.png" alt="Projet 3">
+                <img src="./images/netflixV2modif.png" alt="Projet 3">
+                <img src="./images/netflixV2modif.png" alt="Projet 3">
+                <img src="./images/netflixV2real.png" alt="Projet 3">
+
+              </div>
+            </div>
+
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+          </div>
+          <div class="carousel" id="Monopoly">
+            <h3>Monopoly</h3>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <img src="./images/monopPlateau.png" alt="Projet 1">
+                <img src="./images/monopProjet.png" alt="Projet 2">
+                <img src="./images/monopVscode.png" alt="Projet 3">
+              </div>
+            </div>
+
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+          </div>
+          <div class="carousel" id="Ecomerce">
+            <h3>Site d'Ecomerce</h3>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <img src="./images/Capture.png" alt="Projet 1">
+                <img src="./images/Capture1.png" alt="Projet 2">
+                <img src="./images/Capture2.png" alt="Projet 3">
                 <img src="./images/Capture3.png" alt="Projet 3">
+                <img src="./images/Capture4.png" alt="Projet 3">
+                <img src="./images/Capture5.png" alt="Projet 3">
+                <img src="./images/Capture6.png" alt="Projet 3">
+
               </div>
             </div>
 
@@ -301,7 +343,42 @@
           </div>
         </div>
 
+        <div class="card" style="margin-top:18px" id="netflix">
+          <div class="section-title"><h1>Projets de stages</h1></div>
 
+          <div class="carousel">
+            <h3>C.T.I - (Centre de Traitement Informatique)</h3>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <img src="./images/intranet.png" alt="Projet 1">
+                <img src="./images/exemples.png" alt="Projet 2">
+                <img src="./images/mRemote.png" alt="Projet 3">
+                <img src="./images/bash.png" alt="Projet 3">
+                <img src="./images/fonc.png" alt="Projet 3">
+              </div>
+            </div>
+
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+          </div>
+          <div class="carousel">
+            <h3>Seeb Automation</h3>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <img src="./images/curseurs.png" alt="Projet 3">
+                <img src="./images/ajout_courbes.png" alt="Projet 3">
+                <img src="./images/apli.png" alt="Projet 2">
+                <img src="./images/apli2.png" alt="Projet 3">
+                <img src="./images/apli3.png" alt="Projet 3">
+                <img src="./images/apli4.png" alt="Projet 3">
+                <img src="./images/apli5.png" alt="Projet 3">
+              </div>
+            </div>
+
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+          </div>
+        </div>
 
         <div class="card" id="contact" style="margin-top:18px">
           <div class="section-title">Contact</div>
@@ -341,32 +418,33 @@
     }
 
       // ===== CAROUSEL =====
-      const track = document.querySelector('.carousel-track');
-      const slides = document.querySelectorAll('.carousel img');
-      const nextBtn = document.querySelector('.carousel-btn.next');
-      const prevBtn = document.querySelector('.carousel-btn.prev');
+    
+    document.querySelectorAll('.carousel').forEach(carousel => {
+      const track = carousel.querySelector('.carousel-track');
+      const slides = carousel.querySelectorAll('img');
+      const prevBtn = carousel.querySelector('.carousel-btn.prev');
+      const nextBtn = carousel.querySelector('.carousel-btn.next');
+      const viewport = carousel.querySelector('.carousel-viewport');
 
       let index = 0;
 
-      function updateCarousel() {
-  const width = document.querySelector('.carousel-viewport').clientWidth;
-  track.style.transform = `translateX(-${index * width}px)`;
-}
-
+      function update() {
+        const width = viewport.clientWidth;
+        track.style.transform = `translateX(-${index * width}px)`;
+      }
 
       nextBtn.addEventListener('click', () => {
         index = (index + 1) % slides.length;
-        updateCarousel();
+        update();
       });
 
       prevBtn.addEventListener('click', () => {
         index = (index - 1 + slides.length) % slides.length;
-        updateCarousel();
+        update();
       });
 
-      window.addEventListener('resize', updateCarousel);
-
-
-  </script>
+      window.addEventListener('resize', update);
+    });
+</script>
 </body>
 </html>

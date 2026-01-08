@@ -270,7 +270,7 @@
               <div class="meta">2025 · Python · POO</div>
               <p>Adaptation digitale d'un jeu de plateau : gestion du plateau, tours de jeu et logique d'achats/ventes.</p>
               <div class="actions">
-                <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
+                <a class="btn" href="https://github.com/alisee-f/Monopoly" target="_blank" rel="noopener">Voir le code</a>
                 <a class="btn secondary" href="#Monopoly">Démo</a>
               </div>
             </article>
@@ -282,7 +282,7 @@
               <div class="meta">2025 · PhP MySQL · MVC</div>
               <p>Création d'un site de e-commerce pour la vente de puzzles, gestion des comptes administrateurs, utilisation de la méthode CRUD </p>
               <div class="actions">
-              <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
+              <a class="btn" href="https://github.com/TheotimePerrin/WoodyCraftWeb" target="_blank" rel="noopener">Voir le code</a>
               <a class="btn secondary" href="#Ecomerce">Démo</a>
               </div>
             </article>
@@ -483,7 +483,6 @@
                 <img src="./images/netflixConnection.png" alt="Projet 3">
                 <img src="./images/netflixV2ajout.png" alt="Projet 3">
                 <img src="./images/netflixV2modif.png" alt="Projet 3">
-                <img src="./images/netflixV2modif.png" alt="Projet 3">
                 <img src="./images/netflixV2real.png" alt="Projet 3">
 
               </div>
@@ -491,10 +490,20 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
-            <div class="card" id="projects" style="margin-top:14px;">
-              Coucou 
-            </div>
           </div>
+          <div class="card" id="projects" style="margin-top:14px;">
+          L'objectif du projet Netflix (clone) était de nous former sur les technologies HTML, CSS, JavaScript, PHP et l'utilisation d'une base de données. <br>
+          Ce projet a été divisé en deux parties, la première partie a été réalisée en groupe. <br>
+          Cette expérience nous a permis de gagner en compétence sur le travail en mode projet, grâce à l'utilisation de GitHub et la mise en place d'un camban.<br>
+          La deuxième partie était en solo et nous introduisait l'utilisation d'une base de données avec la méthode CRUD.
+          <h3> Competances aquisent </h3>
+          <ul>
+            <li> Travail en mode projet: GitHub + Canban
+            <br><li> Gestion du patrimoine informatique: Utilisation d'une BDD
+            <br><li> Mettre à disposition des utilisateurs un service informatique: Pages Admin
+          </ul>
+          </div>
+
           <div class="carousel" id="Monopoly">
             <h3>Monopoly</h3>
             <div class="carousel-viewport">
@@ -552,15 +561,19 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
-            <div class="card" id="projects" style="margin-top:14px;">
-              Coucou 
-            </div>
+          </div>
+          <div class="card" id="projects" style="margin-top:14px;">
+            Le Centre de Traitement Informatique (CTI) de Saint-Étienne est l’un des centres informatiques nationaux de l’Assurance Maladie. 
+            <br>Il fait partie intégrante du réseau des CTI qui assurent le bon fonctionnement des systèmes d’information utilisés par les différentes caisses d’assurance maladie en France (CPAM, MSA, etc.).
+            <br>
+            <br><li> intranet  
           </div>
           <div class="carousel" id="seebauto">
             <h3>Seeb Automation</h3>
             <div class="carousel-viewport">
               <div class="carousel-track">
                 <img src="./images/seebauto.png" width="auto" height="100%"/>
+                <img src="./images/ophely.png" width="auto" height="100%"/>
                 <img src="./images/curseurs.png" alt="Projet 3">
                 <img src="./images/ajout_courbes.png" alt="Projet 3">
                 <img src="./images/apli.png" alt="Projet 2">
@@ -573,10 +586,14 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
-            <div class="card" id="projects" style="margin-top:14px;">
-              Coucou 
-            </div>
+            
           </div>
+          <div class="card" id="projects" style="margin-top:14px;">
+            SEEB AUTOMATION conçoit et réalise des équipements de production et de laboratoire innovants et évolutifs afin de répondre aux exigences industrielles de nos donneurs d'ordres.
+            <br> Avec une réelle expertise dans les systèmes automatisés et informatisés des différentes industries, SEEB AUTOMATION a pour valeur première de satisfaire ses clients et d'être force de proposition. 
+            <br>
+            <br><li> OPHELY®
+            </div>
         </div>
 
         <div class="card" id="contact" style="margin-top:18px">

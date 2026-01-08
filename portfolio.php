@@ -150,6 +150,43 @@
 .carousel-btn.next { right: 10px; }
 
 
+/* ===== ACCORDION VEILLE ===== */
+.accordion-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #e6eef6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.accordion-icon {
+  font-size: 26px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 14px;
+}
+
+.accordion-content.open {
+  max-height: 5000px; /* large pour tout ton contenu */
+}
+
+.accordion-content hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 18px 0;
+}
+
+
   </style>
 </head>
 <body>
@@ -230,7 +267,7 @@
             <article class="project">
               <div class="thumb"><img src="./images/monop.jpg" width="auto" height="100%"/></div>
               <h3>Monopoly (Jeu)</h3>
-              <div class="meta">2025 · Python</div>
+              <div class="meta">2025 · Python · POO</div>
               <p>Adaptation digitale d'un jeu de plateau : gestion du plateau, tours de jeu et logique d'achats/ventes.</p>
               <div class="actions">
                 <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
@@ -242,7 +279,7 @@
             <article class="project">
               <div class="thumb"><img src="./images/puzzle.png" width="auto" height="100%"/></div>
               <h3>Site d'Ecomerce</h3>
-              <div class="meta">2025 · PhP MySQL</div>
+              <div class="meta">2025 · PhP MySQL · MVC</div>
               <p>Création d'un site de e-commerce pour la vente de puzzles, gestion des comptes administrateurs, utilisation de la méthode CRUD </p>
               <div class="actions">
               <a class="btn" href="https://github.com/TheotimePerrin" target="_blank" rel="noopener">Voir le code</a>
@@ -254,13 +291,156 @@
         </div>
 
         <div class="card" id="projects" style="margin-top:14px;">
-          <div>
-            <h1>Veille techno</h1>
-            <div style="margin:14px;">
-              L'evolution des robots en ligne notament avec l'utilisation de l'ia.
-            </div>
-          </div>
-        </div>
+
+  <!-- Titre + résumé -->
+  <button class="accordion-toggle" aria-expanded="false">
+    <div>
+      <h1 style="margin:0">Veille techno</h1>
+      <div style="margin-top:6px;font-size:14px;color:var(--muted)">
+        L'évolution des robots, notamment avec l'utilisation de l'IA.
+      </div>
+    </div>
+    <span class="accordion-icon">+</span>
+  </button>
+
+  <!-- CONTENU DÉROULANT -->
+  <div class="accordion-content">
+
+    <p>
+      Utilisation de différents outils comme <strong>Google Alerts</strong> ou d’autres plateformes de veille.
+    </p>
+
+    <div class="card" id="projects" style="margin-top:14px;">
+      <h3>Journal de bord</h3>
+
+      <p>
+        Utilisation de ressources telles que <strong>FMHY</strong> ou <strong>freeCodeCamp</strong>.
+      </p>
+
+      <p>
+        Certification IA :
+        <a href="https://panx.io/awesome-certificates/#robotics-and-iot" target="_blank" rel="noopener">
+          https://panx.io/awesome-certificates/#robotics-and-iot
+        </a>
+      </p>
+
+      <hr>
+
+      <h4>12/02/2025</h4>
+    <ul>
+      <li>
+        <strong>Robot quadrupède “Panthera Noire”</strong> — Des chercheurs chinois ont développé un robot capable d’atteindre
+        une vitesse moyenne de <strong>36 km/h</strong>, proche de celle d’un sprinter professionnel
+        (37,15 km/h).
+        <a href="https://www.wam.ae/article/15evqz6-des-chercheurs-chinois-d%C3%A9veloppent-robot" target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+
+      <li>
+        <strong>Boston Dynamics</strong> souhaite rendre son robot Atlas plus autonome grâce à l’intégration
+        de systèmes d’<strong>intelligence artificielle</strong> et de <strong>machine learning</strong>.
+        <a href="https://www.journaldugeek.com/2025/02/09/boston-dynamics-entraine-son-robot-atlas-a-devenir-un-vrai-pro/"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+
+      <li>
+        <strong>Le Chat</strong>, le “ChatGPT français”, mis en avant par Emmanuel Macron.
+        <a href="https://www.20minutes.fr/high-tech/4138001-20250210-quoi-chat-chatgpt-francais-vante-emmanuel-macron"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+    </ul>
+
+    <h4>19/02/2025</h4>
+    <ul>
+      <li>
+        <strong>Meta vs Apple</strong> — Meta souhaite créer des robots capables de s’adapter aux situations
+        du quotidien, tandis qu’Apple travaille depuis plusieurs années sur des robots à usage domestique.
+        <a href="https://siecledigital.fr/2025/02/18/meta-vs-apple-la-bataille-des-robots-humanoides-est-lancee/"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+
+      <li>
+        L’utilisation excessive de l’<strong>IA générative</strong> pourrait entraîner une détérioration
+        des capacités cognitives et de l’esprit critique.
+        <a href="https://www.francetvinfo.fr/replay-radio/nouveau-monde/le-recours-systematique-a-l-intelligence-artificielle-generative-deteriorerait-les-facultes-cognitives-permettant-l-esprit-critique_7049921.html"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+    </ul>
+
+    <h4>12/03/2025</h4>
+    <ul>
+      <li>
+        <strong>Manus</strong> — Une intelligence artificielle chinoise présentée comme un
+        « premier agent d’IA générale », capable de trier des CV, produire des statistiques
+        et réaliser des prédictions financières.
+        <a href="https://www.lemondeinformatique.fr/actualites/lire-google-introduit-un-mode-ia-dans-son-moteur-de-recherche-96240.html"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+
+      <li>
+        Les <strong>LLM</strong> et la théorie de la <strong>singularité</strong> : l’IA pourrait atteindre
+        un niveau de calcul supérieur à celui du cerveau humain, selon la loi de Moore.
+        <a href="https://www.science-et-vie.com/technos-et-futur/lia-pourrait-elle-vraiment-atteindre-la-singularite-dans-les-12-prochains-mois-193204.html"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+    </ul>
+
+    <h4>02/04/2025</h4>
+    <ul>
+      <li>
+        <strong>Robotique médicale</strong> — Développement de robots chirurgicaux facilitant
+        le travail des chirurgiens et améliorant la récupération des patients.
+        <a href="https://france3-regions.francetvinfo.fr/grand-est/meurthe-et-moselle/nancy/robot-de-chirurgie-a-l-hopital-le-public-invite-a-prendre-les-commandes-3126466.html"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+
+      <li>
+        <strong>Neura Robotics</strong> — Robot humanoïde européen 4NE-1 (1,80 m – 80 kg),
+        capable d’apprendre et de s’améliorer, conçu pour automatiser les tâches répétitives.
+        <a href="https://hellobiz.fr/2025/03/22/il-veut-rivaliser-avec-les-robots-chinois-ce-humanoide-europeen-ultra-avance-pourrait-rebattre-toutes-les-cartes-de-la-robotique-mondiale/"
+          target="_blank" rel="noopener">
+          Source
+        </a>
+      </li>
+    </ul>
+
+    <hr>
+
+    <h4>Sujets à surveiller</h4>
+    <ul>
+      <li>Évolution des robots en ligne, notamment avec l’utilisation de l’IA</li>
+    </ul>
+
+    <h4>Sujets d’intérêt</h4>
+    <ul>
+      <li>Création de robots en ligne</li>
+      <li>Développement d’applications mobiles et desktop</li>
+    </ul>
+      <!-- LE REST DE TON CONTENU NE CHANGE PAS -->
+      <!-- dates, listes, etc. -->
+      <!-- tu peux laisser EXACTEMENT ce que tu avais -->
+      
+      <!-- (je n’ai rien modifié au fond) -->
+
+    </div>
+  </div>
+</div>
+
 
         <div class="card" id="projects" style="margin-top:14px;">
           <div class="section-title"><h1>Stages</h1></div>
@@ -311,6 +491,9 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
+            <div class="card" id="projects" style="margin-top:14px;">
+              Coucou 
+            </div>
           </div>
           <div class="carousel" id="Monopoly">
             <h3>Monopoly</h3>
@@ -324,6 +507,9 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
+            <div class="card" id="projects" style="margin-top:14px;">
+              Coucou 
+            </div>
           </div>
           <div class="carousel" id="Ecomerce">
             <h3>Site d'Ecomerce</h3>
@@ -343,6 +529,9 @@
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
           </div>
+            <div class="card" id="projects" style="margin-top:14px;">
+              Coucou 
+            </div>
         </div>
 
         <div class="card" style="margin-top:18px" id="netflix">
@@ -363,6 +552,9 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
+            <div class="card" id="projects" style="margin-top:14px;">
+              Coucou 
+            </div>
           </div>
           <div class="carousel" id="seebauto">
             <h3>Seeb Automation</h3>
@@ -381,6 +573,9 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
+            <div class="card" id="projects" style="margin-top:14px;">
+              Coucou 
+            </div>
           </div>
         </div>
 
@@ -449,6 +644,21 @@
 
       window.addEventListener('resize', update);
     });
+
+
+    document.querySelectorAll('.accordion-toggle').forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const content = toggle.nextElementSibling;
+    const icon = toggle.querySelector('.accordion-icon');
+    const isOpen = content.classList.contains('open');
+
+    content.classList.toggle('open');
+    icon.textContent = isOpen ? '+' : '−';
+    toggle.setAttribute('aria-expanded', !isOpen);
+  });
+});
+
+
 </script>
 </body>
 </html>

@@ -496,9 +496,9 @@
           Ce projet a été divisé en deux parties, la première partie a été réalisée en groupe. <br>
           Cette expérience nous a permis de gagner en compétence sur le travail en mode projet, grâce à l'utilisation de GitHub et la mise en place d'un camban.<br>
           La deuxième partie était en solo et nous introduisait l'utilisation d'une base de données avec la méthode CRUD.
-          <h3> Competances aquisent </h3>
+          <h3> Compétences acquises </h3>
           <ul>
-            <li> Travail en mode projet: GitHub + Canban
+            <li> Travail en mode projet: GitHub + Kanban
             <br><li> Gestion du patrimoine informatique: Utilisation d'une BDD
             <br><li> Mettre à disposition des utilisateurs un service informatique: Pages Admin
           </ul>
@@ -516,10 +516,19 @@
 
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
-            <div class="card" id="projects" style="margin-top:14px;">
-              Coucou 
-            </div>
+            
           </div>
+          <div class="card" id="projects" style="margin-top:14px;">
+              La création d'un monopoly en Python a été notre première approche de la programmation orientée objet (POO).<br>
+              La conception du camban était au cœur de ce projet. Ensuite, la répartition des tâches a été effectuée pour alléger la charge de travail de chacun.<br>
+              L'utilisation de l'convention de nommage a été primordiale pour l'organisation et la réutilisation du travail de chacun.
+            <ul>
+              <li> Travail en mode projet: GitHub + Canban
+              <br><li> Utilisation de convention de nommage
+              <br><li> Mettre à disposition des utilisateurs un service informatique: Pages Admin
+            </ul>
+          </div>
+          
           <div class="carousel" id="Ecomerce">
             <h3>Site d'Ecomerce</h3>
             <div class="carousel-viewport">
@@ -539,7 +548,13 @@
             <button class="carousel-btn next">❯</button>
           </div>
             <div class="card" id="projects" style="margin-top:14px;">
-              Coucou 
+            Ce projet a été une ouverture à l'architecture Modèle-vue-contrôleur (MVC). Nous avons aussi utilisé des éléments provenant du libraire, notamment pour la traduction du site dans différentes langues.
+            <h3> Compétences acquises </h3>
+              <ul>
+                <li> Travail en mode projet: GitHub + Kanban
+                <br><li> Gestion du patrimoine informatique: Utilisation d'une BDD
+                <br><li> Mettre à disposition des utilisateurs un service informatique: Pages Admin
+              </ul>
             </div>
         </div>
 
@@ -566,7 +581,9 @@
             Le Centre de Traitement Informatique (CTI) de Saint-Étienne est l’un des centres informatiques nationaux de l’Assurance Maladie. 
             <br>Il fait partie intégrante du réseau des CTI qui assurent le bon fonctionnement des systèmes d’information utilisés par les différentes caisses d’assurance maladie en France (CPAM, MSA, etc.).
             <br>
-            <br><li> intranet  
+            <ul>
+              <li> intranet  
+            </ul>
           </div>
           <div class="carousel" id="seebauto">
             <h3>Seeb Automation</h3>
@@ -591,8 +608,9 @@
           <div class="card" id="projects" style="margin-top:14px;">
             SEEB AUTOMATION conçoit et réalise des équipements de production et de laboratoire innovants et évolutifs afin de répondre aux exigences industrielles de nos donneurs d'ordres.
             <br> Avec une réelle expertise dans les systèmes automatisés et informatisés des différentes industries, SEEB AUTOMATION a pour valeur première de satisfaire ses clients et d'être force de proposition. 
-            <br>
-            <br><li> OPHELY®
+            <ul>
+              <li> OPHELY®
+            </ul>
             </div>
         </div>
 

@@ -19,7 +19,7 @@ Passionné par le développement et les nouvelles technologies, j’ai pu dével
 
 ## Compétences
 
-### 💻 Développement
+### Développement
 - HTML / CSS
 - JavaScript
 - PHP
@@ -101,6 +101,6 @@ L'évolution des robots, notamment avec l'utilisation de l'IA.
    PhP MySQL · MVC
 
 - **Lien :**  
-  [[[Lien]](https://github.com/alisee-f/Monopoly)](https://github.com/TheotimePerrin/WoodyCraftWeb)
+  [[[Lien]](https://github.com/alisee-f/Monopoly)
 
 ---
